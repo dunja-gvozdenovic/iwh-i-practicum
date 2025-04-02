@@ -6,7 +6,7 @@
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "_exporter_id": "ID"  //reference th eaccount ID, protects sensitive information
     },
-"item": [
+"item": [  //creating an object in the testing account
 		{
 			"name": "https://api.hubapi.com/crm/v3/schemas",
 			"request": {
@@ -63,10 +63,8 @@
 
 
 
-
-
 		{
-			"name": "https://api.hubapi.com/crm/v3/objects/pet",
+			"name": "https://api.hubapi.com/crm/v3/objects/pet",  //adding records to the object withe properties
 			"request": {
 				"auth": {
 					"type": "bearer",
