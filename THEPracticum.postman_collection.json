@@ -5,7 +5,7 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "43660137"
 	},
-    "item": [
+	"item": [
 		{
 			"name": "https://api.hubapi.com/crm/v3/schemas",
 			"request": {
@@ -14,7 +14,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "pat-eu1-0fe7cbf6-0b17-477f-8fbc-1cd67dfb9da3",
+							"value": "{{hubspot_api_key}}",
 							"type": "string"
 						}
 					]
@@ -23,7 +23,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer pat-eu1-0fe7cbf6-0b17-477f-8fbc-1cd67dfb9da3",
+						"value": "Bearer {{hubspot_api_key}}",
 						"type": "text"
 					},
 					{
