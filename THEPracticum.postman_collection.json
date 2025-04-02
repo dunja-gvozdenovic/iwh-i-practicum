@@ -4,7 +4,7 @@
         "_postman_id": "8a891bbc-dc14-4ffa-a091-8ce5a0974a1b",
         "name": "Practicum",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-        "_exporter_id": "ID"
+        "_exporter_id": "ID"  //reference th eaccount ID, protects sensitive information
     },
 "item": [
 		{
@@ -15,7 +15,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{hubspot_api_key}}",
+							"value": "{{hubspot_api_key}}",   //references a secure placeholder for the HubSpot API key, ensuring the sensitive information is protected
 							"type": "string"
 						}
 					]
