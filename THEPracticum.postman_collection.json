@@ -5,5 +5,58 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "43660137"
 	},
-
+    "item": [
+		{
+			"name": "https://api.hubapi.com/crm/v3/schemas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "pat-eu1-0fe7cbf6-0b17-477f-8fbc-1cd67dfb9da3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer pat-eu1-0fe7cbf6-0b17-477f-8fbc-1cd67dfb9da3",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"pet\",\r\n  \"labels\": {\r\n    \"singular\": \"Pet\",\r\n    \"plural\": \"Pets\"\r\n  },\r\n  \"primaryDisplayProperty\": \"name\",\r\n  \"requiredProperties\": [\"name\"],\r\n  \"properties\": [\r\n    {\r\n      \"name\": \"name\",\r\n      \"label\": \"Name\",\r\n      \"type\": \"string\",\r\n      \"fieldType\": \"text\"\r\n    },\r\n    {\r\n      \"name\": \"species\",\r\n      \"label\": \"Species\",\r\n      \"type\": \"string\",\r\n      \"fieldType\": \"text\"\r\n    },\r\n    {\r\n      \"name\": \"age\",\r\n      \"label\": \"Age\",\r\n      \"type\": \"number\",\r\n      \"fieldType\": \"number\"\r\n    }\r\n  ],\r\n  \"associatedObjects\": [\"CONTACT\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.hubapi.com/crm/v3/schemas",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hubapi",
+						"com"
+					],
+					"path": [
+						"crm",
+						"v3",
+						"schemas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
