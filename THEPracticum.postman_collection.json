@@ -1,11 +1,12 @@
+
 {
-	"info": {
-		"_postman_id": "8a891bbc-dc14-4ffa-a091-8ce5a0974a1b",
-		"name": "Practicum",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "43660137"
-	},
-	"item": [
+    "info": {
+        "_postman_id": "8a891bbc-dc14-4ffa-a091-8ce5a0974a1b",
+        "name": "Practicum",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "ID"
+    },
+"item": [
 		{
 			"name": "https://api.hubapi.com/crm/v3/schemas",
 			"request": {
@@ -53,6 +54,65 @@
 						"crm",
 						"v3",
 						"schemas"
+					]
+				}
+			},
+			"response": []
+		},
+
+
+
+
+
+
+		{
+			"name": "https://api.hubapi.com/crm/v3/objects/pet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{hubspot_api_key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{hubspot_api_key}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"properties\": {\r\n    \"name\": \"Buddy\",\r\n    \"species\": \"Dog\",\r\n    \"age\": 5\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.hubapi.com/crm/v3/objects/pet",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hubapi",
+						"com"
+					],
+					"path": [
+						"crm",
+						"v3",
+						"objects",
+						"pet"
 					]
 				}
 			},
